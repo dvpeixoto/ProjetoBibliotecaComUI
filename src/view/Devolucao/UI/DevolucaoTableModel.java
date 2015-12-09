@@ -11,7 +11,9 @@ import javax.swing.table.AbstractTableModel;
 import model.Livro;
 
 /**
- * @author Diego Peixoto e Tainara Specht
+ *
+ * @author Diego Peixoto
+ * @author Tainara Specht
  */
 public class DevolucaoTableModel extends AbstractTableModel{
 

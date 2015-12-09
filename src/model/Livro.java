@@ -4,7 +4,7 @@ package model;
  *Classe MODEL da classe Livro
  *
  * @author Tainara Specht
- * @author Diego Peixoto Classe Models para a classe Livro
+ * @author Diego Peixoto
  */
 public class Livro {
 

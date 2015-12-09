@@ -16,7 +16,9 @@ import view.Livro.UI.JanelaCrudLivro;
 import view.Relatorio.UI.PainelRelatorio;
 /**
  *
- * @author 631420414
+ *
+ * @author Tainara Specht
+ * @author Diego Peixoto
  */
 public class PainelMenu extends javax.swing.JFrame {
 

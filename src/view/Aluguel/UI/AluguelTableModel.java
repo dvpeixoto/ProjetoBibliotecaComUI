@@ -11,18 +11,22 @@ import javax.swing.table.AbstractTableModel;
 import model.Livro;
 
 /**
- * @author Diego Peixoto e Tainara Specht
+ *
+ * @author Tainara Specht
+ * @author Diego Peixoto
  */
 public class AluguelTableModel extends AbstractTableModel{
 
     private String header[];
     private List<Livro> livros;
 
+
     public AluguelTableModel()
     {
-        this.header = new String[]{"ISBN","Titulo","Editora","Autor(es)","Ano de Publicação","Disponibilidade"};
+        this.header = new String[]{"ISBN","Título","Editora","Autor(es)","Ano de Publicação","Disponibilidade"};
         this.livros = new ArrayList<Livro>();
     }
+
 
     public AluguelTableModel(String[] header, List<Livro> livros)
     {

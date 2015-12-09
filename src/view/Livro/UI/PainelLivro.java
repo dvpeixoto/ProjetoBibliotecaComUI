@@ -12,13 +12,13 @@ import javax.swing.JTable;
 
 /**
  *
- * @author Diego
+ * @author Diego Peixoto
+ * @author Tainara Specht
  */
 public class PainelLivro extends javax.swing.JPanel {
     private LivroControllerUI controller;
-    /**
-     * Creates new form PainelLivro
-     */
+
+
     public PainelLivro(LivroControllerUI controller) {
         this.controller = controller;
         initComponents();

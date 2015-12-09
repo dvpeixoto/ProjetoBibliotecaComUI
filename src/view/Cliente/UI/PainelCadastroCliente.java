@@ -15,15 +15,15 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Diego
+ * @author Tainara Specht
+ * @author Diego Peixoto
  */
+
 public class PainelCadastroCliente extends javax.swing.JPanel {
     private ClienteControllerUI controller;
     private JanelaCrudCliente janela;
 
-    /**
-     * Creates new form PainelCadastroCliente
-     */
+
     public PainelCadastroCliente(ClienteControllerUI controller) {
         this.controller = controller;
         initComponents();

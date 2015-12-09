@@ -13,7 +13,8 @@ import util.PrintUtil;
 
 /**
  *
- * @author Diego
+ * @author Diego Peixoto
+ * @author Tainara Specht
  */
 public class PainelCadastroLivro extends javax.swing.JPanel {
 

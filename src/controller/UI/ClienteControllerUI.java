@@ -13,6 +13,13 @@ import view.Cliente.UI.PainelCadastroCliente;
 import view.Cliente.UI.PainelCliente;
 import util.PrintUtil;
 
+
+/**
+ * Classe controller para a classe Cliente;
+ * @author Tainara Specht
+ * @author Diego Peixoto
+ */
+
 public class ClienteControllerUI {
 
     private final static int TABELA = 0;
@@ -25,6 +32,9 @@ public class ClienteControllerUI {
 
     private JanelaCrudCliente janela;
 
+    /**
+     *
+     */
     public ClienteControllerUI() {
         telaAtual = TABELA;
     }
@@ -127,9 +137,9 @@ public class ClienteControllerUI {
     /**
      * Método utilizado para salvar inserção de cliente e edição de cliente
      *
-     * @param rg
-     * @param nome
-     * @param telefone
+     * @param rg - recebe um número de rg para cadastro;
+     * @param nome - recebe o nome  do cliente para cadastro;
+     * @param telefone - recebe um número de telefone para cadastro;
      */
     public void salvarCliente(String rg, String nome, String telefone) {
         PainelCadastroCliente painelForm = this.janela.getPainelFormulario();
@@ -148,7 +158,7 @@ public class ClienteControllerUI {
                         PrintUtil.printMessageError(janela, "Nome é inválido!");
                     } else {
                         if (isTelefone(telefoneTemp) != true || telefone == null) {
-                            PrintUtil.printMessageError(janela, "Número de telefone inválido! Digite (xx) xxxx-xxxx: ");
+                            PrintUtil.printMessageError(janela, "Número de telefone inválido! Digite no formato (xx) xxxx-xxxx: ");
                             return;
                         }
                         long matricula;
@@ -164,7 +174,7 @@ public class ClienteControllerUI {
                 }
             } else if (telaAtual == FORMEDICAO) {
                 if (clienteExiste(rgTemp)) {
-                    PrintUtil.printMessageError(janela, "RG já existe");
+                    PrintUtil.printMessageError(janela, "RG já existe.");
                 } else if (validacaoRG(rgTemp) == false) {
                     PrintUtil.printMessageError(janela, "RG é inválido!");
                 } else {
@@ -172,7 +182,7 @@ public class ClienteControllerUI {
                         PrintUtil.printMessageError(janela, "Nome é inválido!");
                     } else {
                         if (isTelefone(telefoneTemp) != true || telefone == null) {
-                            PrintUtil.printMessageError(janela, "Número de telefone inválido! Digite (xx) xxxx-xxxx: ");
+                            PrintUtil.printMessageError(janela, "Número de telefone inválido! Digite no formato (xx) xxxx-xxxx: ");
                             return;
                         }
                         linhaSelecionada = painelTabela.getTabelaClientes().getSelectedRow();

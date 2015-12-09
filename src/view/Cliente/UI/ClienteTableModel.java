@@ -11,7 +11,9 @@ import javax.swing.table.AbstractTableModel;
 import model.Cliente;
 
 /**
- * @author Diego Peixoto e Tainara Specht
+ *
+ * @author Tainara Specht
+ * @author Diego Peixoto
  */
 public class ClienteTableModel extends AbstractTableModel{
 

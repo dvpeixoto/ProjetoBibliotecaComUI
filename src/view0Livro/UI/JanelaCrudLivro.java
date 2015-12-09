@@ -1,31 +1,31 @@
-package view.Cliente.UI;
+package view.Livro.UI;
 
-import controller.UI.ClienteControllerUI;
+import controller.UI.LivroControllerUI;
 import java.awt.CardLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
  *
- * @author Tainara Specht
  * @author Diego Peixoto
+ * @author Tainara Specht
  */
 
-public class JanelaCrudCliente extends JFrame {
-    private ClienteControllerUI controller;
+public class JanelaCrudLivro extends JFrame {
+    private LivroControllerUI controller;
     
     public final static String PAINELFORM = "Formulario";
     public final static String PAINELTABELA = "Tabela";
     private JPanel painelPrincipal;    
-    private PainelCadastroCliente painelCadastroCliente;
-    private PainelCliente painelCliente;
+    private PainelCadastroLivro painelCadastroLivro;
+    private PainelLivro painelLivro;
 
-    public JanelaCrudCliente(JFrame pai, ClienteControllerUI controller) {
+    public JanelaCrudLivro(JFrame pai, LivroControllerUI controller) {
         this.controller = controller;
         this.controller.setJanela(this);
         iniciaComponentes();
         controller.atualizaTabela();
-        this.setTitle("Área do Cliente");
+        this.setTitle("Biblioteca");
         this.pack();
         this.setLocationRelativeTo(pai);
         this.setVisible(true);
@@ -33,10 +33,10 @@ public class JanelaCrudCliente extends JFrame {
 
     private void iniciaComponentes() {
         painelPrincipal = new JPanel(new CardLayout());
-        painelCliente = new PainelCliente(controller);
-        painelPrincipal.add(painelCliente, PAINELTABELA);
-        painelCadastroCliente = new PainelCadastroCliente(controller);
-        painelPrincipal.add(painelCadastroCliente, PAINELFORM);
+        painelLivro = new PainelLivro(controller);
+        painelPrincipal.add(painelLivro, PAINELTABELA);
+        painelCadastroLivro = new PainelCadastroLivro(controller);
+        painelPrincipal.add(painelCadastroLivro, PAINELFORM);
         this.add(painelPrincipal);
     }
 
@@ -46,15 +46,15 @@ public class JanelaCrudCliente extends JFrame {
 
     }
 
-    public PainelCadastroCliente getPainelFormulario() {
-        return painelCadastroCliente;
+    public PainelCadastroLivro getPainelFormulario() {
+        return painelCadastroLivro;
     }
 
-    public PainelCliente getPainelTabela() {
-        return painelCliente;
+    public PainelLivro getPainelTabela() {
+        return painelLivro;
     }
 
-    public void setController(ClienteControllerUI controller) {
+    public void setController(LivroControllerUI controller) {
         this.controller = controller;
     }
     

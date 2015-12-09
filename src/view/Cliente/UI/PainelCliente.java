@@ -12,13 +12,12 @@ import javax.swing.JTable;
 
 /**
  *
- * @author Diego
+ * @author Tainara Specht
+ * @author Diego Peixoto
  */
 public class PainelCliente extends javax.swing.JPanel {
     private ClienteControllerUI controller;
-    /**
-     * Creates new form PainelCliente
-     */
+
     public PainelCliente(ClienteControllerUI controller) {
         this.controller = controller;
         initComponents();

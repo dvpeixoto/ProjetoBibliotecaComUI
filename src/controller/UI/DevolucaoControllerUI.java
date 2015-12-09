@@ -18,6 +18,12 @@ import view.Devolucao.UI.JanelaCrudDevolucao;
 import view.Devolucao.UI.PainelCadastroDevolucao;
 import view.Devolucao.UI.PainelDevolucao;
 
+/**
+ * Classe controller para a classe Devolução;
+ * @author Tainara Specht
+ * @author Diego Peixoto
+ */
+
 public class DevolucaoControllerUI {
 
     private final static int TABELA = 0;
@@ -66,8 +72,8 @@ public class DevolucaoControllerUI {
     /**
      * Método utilizado para fazer a inserção do aluguel no banco de dados
      *
-     * @param rg
-     * @param idAluguel
+     * @param rg - recebe um número de rg do cliente;
+     * @param idAluguel - recebe o id do aluguel de um livro;
      */
     public void salvarDevolucao(long rg, int idAluguel) {
         boolean atrasado = false;
@@ -89,7 +95,7 @@ public class DevolucaoControllerUI {
                 int qntDias = difDatas(alu, data);
                 if (qntDias > 7) {
                     double multa = 1.00 * qntDias;
-                    PrintUtil.printMessageError(janela, "Este livro está atrasado, acerte a Multa no valor de " + multa + " com a administração!");
+                    PrintUtil.printMessageError(janela, "Este livro está atrasado, acerte a multa no valor de " + multa + " com a administração.");
                     atrasado = true;
                 }
                 DevolucaoDao dao = new DevolucaoDaoBd();

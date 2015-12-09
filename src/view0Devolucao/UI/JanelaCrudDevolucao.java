@@ -1,26 +1,26 @@
-package view.Aluguel.UI;
+package view.Devolucao.UI;
 
-import controller.UI.AluguelControllerUI;
+import controller.UI.DevolucaoControllerUI;
 import java.awt.CardLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
- * @author Tainara Specht
+ *
  * @author Diego Peixoto
+ * @author Tainara Specht
  */
 
-public class JanelaCrudAluguel extends JFrame {
-    private AluguelControllerUI controller;
+public class JanelaCrudDevolucao extends JFrame {
+    private DevolucaoControllerUI controller;
     
     public final static String PAINELFORM = "Formulario";
     public final static String PAINELTABELA = "Tabela";
     private JPanel painelPrincipal; 
-    private PainelCadastroAluguel painelCadastroAluguel;
-    private PainelAluguel painelAluguel;
+    private PainelCadastroDevolucao painelCadastroDevolucao;
+    private PainelDevolucao painelDevolucao;
 
-
-    public JanelaCrudAluguel(JFrame pai, AluguelControllerUI controller) {
+    public JanelaCrudDevolucao(JFrame pai, DevolucaoControllerUI controller) {
         this.controller = controller;
         this.controller.setJanela(this);
         iniciaComponentes();
@@ -31,16 +31,14 @@ public class JanelaCrudAluguel extends JFrame {
         this.setVisible(true);
     }
 
-
     private void iniciaComponentes() {
         painelPrincipal = new JPanel(new CardLayout());
-        painelAluguel = new PainelAluguel(controller);
-        painelPrincipal.add(painelAluguel, PAINELTABELA);
-        painelCadastroAluguel = new PainelCadastroAluguel(controller);
-        painelPrincipal.add(painelCadastroAluguel, PAINELFORM);
+        painelDevolucao = new PainelDevolucao(controller);
+        painelPrincipal.add(painelDevolucao, PAINELTABELA);
+        painelCadastroDevolucao = new PainelCadastroDevolucao(controller);
+        painelPrincipal.add(painelCadastroDevolucao, PAINELFORM);
         this.add(painelPrincipal);
     }
-
 
     public void mostrarPainel(String painel) {
         CardLayout card = (CardLayout) (painelPrincipal.getLayout());
@@ -48,15 +46,15 @@ public class JanelaCrudAluguel extends JFrame {
 
     }
 
-    public PainelAluguel getPainelTabela() {
-        return painelAluguel;
+    public PainelDevolucao getPainelTabela() {
+        return painelDevolucao;
     }
 
-    public void setController(AluguelControllerUI controller) {
+    public void setController(DevolucaoControllerUI controller) {
         this.controller = controller;
     }
     
-    public PainelCadastroAluguel getPainelFormulario() {
-        return painelCadastroAluguel;
+    public PainelCadastroDevolucao getPainelFormulario() {
+        return painelCadastroDevolucao;
     }
 }

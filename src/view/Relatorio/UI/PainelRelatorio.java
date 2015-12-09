@@ -14,7 +14,8 @@ import view.Livro.UI.LivroTableModel;
 
 /**
  *
- * @author Diego Peixoto e Tainara Specht
+ * @author Diego Peixoto
+ * @author Tainara Specht
  */
 public class PainelRelatorio extends javax.swing.JFrame {
     private ClienteControllerUI controllerCliente;

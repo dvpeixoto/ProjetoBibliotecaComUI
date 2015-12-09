@@ -16,6 +16,12 @@ import view.Aluguel.UI.JanelaCrudAluguel;
 import view.Aluguel.UI.PainelAluguel;
 import view.Aluguel.UI.PainelCadastroAluguel;
 
+/**
+ * Classe controller para a classe Aluguel;
+ * @author Tainara Specht
+ * @author Diego Peixoto
+ */
+
 public class AluguelControllerUI {
 
     private final static int TABELA = 0;
@@ -30,6 +36,9 @@ public class AluguelControllerUI {
     private ClienteControllerUI controllerCliente;
     private LivroControllerUI controllerLivro;
 
+    /**
+     *
+     */
     public AluguelControllerUI() {
         telaAtual = TABELA;
     }
@@ -63,8 +72,8 @@ public class AluguelControllerUI {
     }
 
     /**
-     * Método utilizado para fazer a inserção do aluguel no banco de dados
-     * @param rg 
+     * Método utilizado para fazer a inserção do aluguel no banco de dados;
+     * @param rg - recebe o rg de um cliente para o aluguel;
      */
     public void salvarAluguel(long rg) {
         PainelAluguel painelTabela = this.janela.getPainelTabela();
@@ -140,7 +149,6 @@ public class AluguelControllerUI {
 
     /**
      * Método que comunica a classe AluguelDao da inserção de um novo aluguel;
-     *
      * @param a - recebe um objeto aluguel de um livro;
      */
     public void addAluguel(Aluguel a) {

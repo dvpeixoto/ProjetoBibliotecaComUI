@@ -12,6 +12,12 @@ import view.Livro.UI.LivroTableModel;
 import view.Livro.UI.PainelCadastroLivro;
 import view.Livro.UI.PainelLivro;
 
+/**
+ * Classe controller para a classe Livro;
+ * @author Tainara Specht
+ * @author Diego Peixoto
+ */
+
 public class LivroControllerUI {
 
     private final static int TABELA = 0;
@@ -126,11 +132,11 @@ public class LivroControllerUI {
     /**
      * Método utilizado para salvar inserção e edição de livros
      *
-     * @param isbn
-     * @param titulo
-     * @param editora
-     * @param autor
-     * @param anoPublicacao
+     * @param isbn - recebe um isbn de um livro;
+     * @param titulo - recebe o título de um livro;
+     * @param editora - recebe a editora de um livro;
+     * @param autor - recebe o(s) autor(es) de um livro;
+     * @param anoPublicacao - recebe o ano de publicação de um livro;
      */
     public void salvarLivro(String isbn, String titulo, String editora, String autor, String anoPublicacao) {
         PainelCadastroLivro painelForm = this.janela.getPainelFormulario();
@@ -244,7 +250,6 @@ public class LivroControllerUI {
 
     /**
      * Método que comunica a classe LivroDao da inserção de um novo livro;
-     *
      * @param l - recebe um objeto Livro;
      */
     public void addLivro(Livro l) {
@@ -264,7 +269,6 @@ public class LivroControllerUI {
     /**
      * Método que solicita ao LivroDao que busque as informações de um livro
      * pelo ISBN do mesmo;
-     *
      * @param isbn - recebe o ISBN do livro;
      * @return retorna o objeto Livro encontrado no banco de dados;
      */
@@ -277,7 +281,6 @@ public class LivroControllerUI {
      /**
      * Método que solicita ao LivroDao que busque as informações de um livro
      * pelo código do mesmo;
-     *
      * @param cod - recebe o ISBN do livro;
      * @return retorna o objeto Livro encontrado no banco de dados;
      */
@@ -290,7 +293,6 @@ public class LivroControllerUI {
     /**
      * Método que solicita ao LivroDao que busque as informações de um livro
      * pelo título do mesmo;
-     *
      * @param titulo - recebe o título do livro;
      * @return retorna o objeto Livro encontrado no banco de dados;
      */
@@ -303,7 +305,6 @@ public class LivroControllerUI {
     /**
      * Método que solicita ao LivroDao que edite as informações de variável tipo
      * long de um livro;
-     *
      * @param op - recebe o número do operador que indica as opções do menu;
      * @param novoX - recebe o novo valor a ser editado;
      * @param l - recebe o objeto Livro que terá algum valor alterado;
@@ -318,7 +319,6 @@ public class LivroControllerUI {
     /**
      * Método que solicita ao LivroDao que edite as informações de variável tipo
      * String de um livro;
-     *
      * @param op - recebe o número do operador que indica as opções do menu;
      * @param novoX - recebe o novo valor a ser editado;
      * @param l - recebe o objeto Livro que terá algum valor alterado;
@@ -341,7 +341,6 @@ public class LivroControllerUI {
 
     /**
      * Método que solicita ao LivroDao que delete um livro do banco de dados;
-     *
      * @param l - recebe o objeto Livro;
      */
     public void deletarLivro(Livro l) {
@@ -351,7 +350,6 @@ public class LivroControllerUI {
 
     /**
      * Método que solicita ao LivroDao que verifica se um ISBN existe;
-     *
      * @param isbn - recebe o ISBN de um livro;
      * @return retorna 'true' ou 'false'
      */
