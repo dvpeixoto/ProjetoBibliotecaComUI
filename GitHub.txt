@@ -1,2 +1,2 @@
-"httpsgithub.comtrspechtbibliotecaRies.git"
-Link: https://github.com/trspecht/bibliotecaRies
+
+Link: https://github.com/dvpeixoto/ProjetoBibliotecaComUI

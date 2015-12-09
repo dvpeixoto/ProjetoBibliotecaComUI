@@ -15,16 +15,16 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Diego
+ * @author Diego Peixoto
+ * @author Tainara Specht
  */
 public class PainelCadastroDevolucao extends javax.swing.JPanel {
     private DevolucaoControllerUI controller;
     private JanelaCrudDevolucao janela;
     private ClienteControllerUI controllerCliente;
     private AluguelControllerUI controllerAluguel;
-    /**
-     * Creates new form PainelCadastroDevolucao
-     */
+
+
     public PainelCadastroDevolucao(DevolucaoControllerUI controller) {
         this.controller = controller;
         initComponents();

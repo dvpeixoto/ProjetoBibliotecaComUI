@@ -17,7 +17,8 @@ import model.Livro;
 
 /**
  *
- * @author Diego
+ * @author Diego Peixoto
+ * @author Tainara Specht
  */
 public class PainelDevolucao extends javax.swing.JPanel {
 
@@ -26,9 +27,7 @@ public class PainelDevolucao extends javax.swing.JPanel {
     private LivroControllerUI controllerLivro;
     private DevolucaoControllerUI controller;
 
-    /**
-     * Creates new form PainelDevolucao
-     */
+
     public PainelDevolucao(DevolucaoControllerUI controller) {
         this.controller = controller;
         initComponents();

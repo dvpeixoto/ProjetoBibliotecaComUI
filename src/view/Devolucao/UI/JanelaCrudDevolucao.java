@@ -5,6 +5,12 @@ import java.awt.CardLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+/**
+ *
+ * @author Diego Peixoto
+ * @author Tainara Specht
+ */
+
 public class JanelaCrudDevolucao extends JFrame {
     private DevolucaoControllerUI controller;
     

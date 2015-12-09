@@ -2,32 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7166211-8004-4326-a04e-9fc744c8ea7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/UI/AluguelControllerUI.java" afterPath="$PROJECT_DIR$/src/controller/UI/AluguelControllerUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Aluguel/UI/AluguelTableModel.java" afterPath="$PROJECT_DIR$/src/view/Aluguel/UI/AluguelTableModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/UI/ClienteControllerUI.java" afterPath="$PROJECT_DIR$/src/controller/UI/ClienteControllerUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Cliente/UI/ClienteTableModel.java" afterPath="$PROJECT_DIR$/src/view/Cliente/UI/ClienteTableModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/UI/DevolucaoControllerUI.java" afterPath="$PROJECT_DIR$/src/controller/UI/DevolucaoControllerUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Devolucao/UI/DevolucaoTableModel.java" afterPath="$PROJECT_DIR$/src/view/Devolucao/UI/DevolucaoTableModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Aluguel/UI/JanelaCrudAluguel.java" afterPath="$PROJECT_DIR$/src/view/Aluguel/UI/JanelaCrudAluguel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Cliente/UI/JanelaCrudCliente.java" afterPath="$PROJECT_DIR$/src/view/Cliente/UI/JanelaCrudCliente.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/view0Devolucao/UI/JanelaCrudDevolucao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/view0Devolucao/UI/PainelCadastroDevolucao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/view0Devolucao/UI/PainelDevolucao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/view0Livro/UI/JanelaCrudLivro.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Devolucao/UI/JanelaCrudDevolucao.java" afterPath="$PROJECT_DIR$/src/view/Devolucao/UI/JanelaCrudDevolucao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Livro/UI/JanelaCrudLivro.java" afterPath="$PROJECT_DIR$/src/view/Livro/UI/JanelaCrudLivro.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Relatorio/UI/JanelaRelatorio.java" afterPath="$PROJECT_DIR$/src/view/Relatorio/UI/JanelaRelatorio.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Livro.java" afterPath="$PROJECT_DIR$/src/model/Livro.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/UI/LivroControllerUI.java" afterPath="$PROJECT_DIR$/src/controller/UI/LivroControllerUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Livro/UI/LivroTableModel.java" afterPath="$PROJECT_DIR$/src/view/Livro/UI/LivroTableModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Aluguel/UI/PainelAluguel.java" afterPath="$PROJECT_DIR$/src/view/Aluguel/UI/PainelAluguel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Aluguel/UI/PainelCadastroAluguel.java" afterPath="$PROJECT_DIR$/src/view/Aluguel/UI/PainelCadastroAluguel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Cliente/UI/PainelCadastroCliente.java" afterPath="$PROJECT_DIR$/src/view/Cliente/UI/PainelCadastroCliente.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Devolucao/UI/PainelCadastroDevolucao.java" afterPath="$PROJECT_DIR$/src/view/Devolucao/UI/PainelCadastroDevolucao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Livro/UI/PainelCadastroLivro.java" afterPath="$PROJECT_DIR$/src/view/Livro/UI/PainelCadastroLivro.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Cliente/UI/PainelCliente.java" afterPath="$PROJECT_DIR$/src/view/Cliente/UI/PainelCliente.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Devolucao/UI/PainelDevolucao.java" afterPath="$PROJECT_DIR$/src/view/Devolucao/UI/PainelDevolucao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Livro/UI/PainelLivro.java" afterPath="$PROJECT_DIR$/src/view/Livro/UI/PainelLivro.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/menu/UI/PainelMenu.java" afterPath="$PROJECT_DIR$/src/view/menu/UI/PainelMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Relatorio/UI/PainelRelatorio.java" afterPath="$PROJECT_DIR$/src/view/Relatorio/UI/PainelRelatorio.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/PrintUtil.java" afterPath="$PROJECT_DIR$/src/util/PrintUtil.java" />
     </list>
     <ignored path="ProjetoBibliotecaComUI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,30 +121,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetoBibliotecaComUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetoBibliotecaComUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetoBibliotecaComUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetoBibliotecaComUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -178,6 +136,47 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -202,6 +201,22 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -221,6 +236,11 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -274,7 +294,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="976" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="976" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
