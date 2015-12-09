@@ -125,7 +125,7 @@ public class PainelDevolucao extends javax.swing.JPanel {
             String rg = JOptionPane.showInputDialog("Digite seu RG:");
             controllerCliente = new ClienteControllerUI();
             if (controllerCliente.clienteExiste(Long.parseLong(rg))) {
-                idAluguel = JOptionPane.showInputDialog("Digite o código de devolução:");
+                idAluguel = JOptionPane.showInputDialog("Digite o isbn do livro:");
                 controllerAluguel = new AluguelControllerUI();
                 if (controllerAluguel.CodigoExiste(Integer.parseInt(idAluguel))) {
                     int op = JOptionPane.showOptionDialog(this, "Deseja devolver este livro?", "Código encontrado!", JOptionPane.YES_NO_OPTION,
@@ -162,7 +162,7 @@ public class PainelDevolucao extends javax.swing.JPanel {
                     String rg = JOptionPane.showInputDialog("Digite seu RG: ");
                     controllerCliente = new ClienteControllerUI();
                     if (controllerCliente.clienteExiste(Long.parseLong(rg))) {
-                        idAluguel = JOptionPane.showInputDialog("Digite o código de devolução:");
+                        idAluguel = JOptionPane.showInputDialog("Digite o isbn do livro:");
                         controllerAluguel = new AluguelControllerUI();
                         if (controllerAluguel.CodigoExiste(Integer.parseInt(idAluguel))) {
                             JOptionPane.showMessageDialog(this, "Processando Dados...");
@@ -200,7 +200,7 @@ public class PainelDevolucao extends javax.swing.JPanel {
                     String rg = JOptionPane.showInputDialog("Digite seu RG: ");
                     controllerCliente = new ClienteControllerUI();
                     if (controllerCliente.clienteExiste(Long.parseLong(rg))) {
-                        idAluguel = JOptionPane.showInputDialog("Digite o código de devolução:");
+                        idAluguel = JOptionPane.showInputDialog("Digite o isbn do livro:");
                         controllerAluguel = new AluguelControllerUI();
                         if (controllerAluguel.CodigoExiste(Integer.parseInt(idAluguel))) {
                             JOptionPane.showMessageDialog(this, "Processando Dados...");

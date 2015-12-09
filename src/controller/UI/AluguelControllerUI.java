@@ -91,6 +91,7 @@ public class AluguelControllerUI {
                     AluguelDao dao = new AluguelDaoBd();
                     dao.inserir(new Aluguel(dateFormat, cli, li));
                     PrintUtil.printMessageSucesso(janela, "Livro alugado com sucesso!");
+                    
                 }
             }
         } catch (Exception e) {

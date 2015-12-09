@@ -86,6 +86,10 @@ public class PainelCadastroDevolucao extends javax.swing.JPanel {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 139, Short.MAX_VALUE)
+                .addComponent(labelPainelFormulario)
+                .addGap(129, 129, 129))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -111,15 +115,11 @@ public class PainelCadastroDevolucao extends javax.swing.JPanel {
                                 .addComponent(jLabel4)
                                 .addGap(21, 21, 21)
                                 .addComponent(textEditora, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(botaoVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(botaoVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(81, 81, 81)
-                        .addComponent(botaoSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(botaoSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(78, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 139, Short.MAX_VALUE)
-                .addComponent(labelPainelFormulario)
-                .addGap(129, 129, 129))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -198,23 +198,23 @@ public class PainelCadastroDevolucao extends javax.swing.JPanel {
 
     private void botaoSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoSalvarActionPerformed
         try {
-            String idAluguel="";
+            String idAluguel = "";
             String[] opcoes = {"sim", "não"};
-            String rg = JOptionPane.showInputDialog("Digite seu RG");
+            String rg = JOptionPane.showInputDialog("Digite seu RG:");
             controllerCliente = new ClienteControllerUI();
             if (controllerCliente.clienteExiste(Long.parseLong(rg))) {
-                idAluguel = JOptionPane.showInputDialog(idAluguel);
+                idAluguel = JOptionPane.showInputDialog("Digite o isbn do livro:");
                 controllerAluguel = new AluguelControllerUI();
-                if(controllerAluguel.CodigoExiste(Integer.parseInt(idAluguel))){
-                int op = JOptionPane.showOptionDialog(this, "Deseja devolver este livro?", "Código encontrado!", JOptionPane.YES_NO_OPTION,
-                    JOptionPane.QUESTION_MESSAGE, null, opcoes, opcoes[0]);
-                if (op == 0) {
-                    JOptionPane.showMessageDialog(this, "Processando Dados...");
-                    controller.salvarDevolucao(Long.parseLong(rg), Integer.parseInt(idAluguel));
+                if (controllerAluguel.CodigoExiste(Integer.parseInt(idAluguel))) {
+                    int op = JOptionPane.showOptionDialog(this, "Deseja devolver este livro?", "Código encontrado!", JOptionPane.YES_NO_OPTION,
+                            JOptionPane.QUESTION_MESSAGE, null, opcoes, opcoes[0]);
+                    if (op == 0) {
+                        JOptionPane.showMessageDialog(this, "Processando Dados...");
+                        controller.salvarDevolucao(Long.parseLong(rg), Integer.parseInt(idAluguel));
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Livro não pode ser devolvido!");
+                    }
                 } else {
-                    JOptionPane.showMessageDialog(this, "Livro não pode ser devolvido!");
-                }
-                }else{
                     JOptionPane.showMessageDialog(this, "Código não encontrado!");
                 }
             } else {
