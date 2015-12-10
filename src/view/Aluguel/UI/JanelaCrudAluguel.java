@@ -5,7 +5,8 @@ import java.awt.CardLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-/**
+/**Classe responsável por iniciar o frame com o CRUD do Aluguel;
+ *
  * @author Tainara Specht
  * @author Diego Peixoto
  */
@@ -19,7 +20,11 @@ public class JanelaCrudAluguel extends JFrame {
     private PainelCadastroAluguel painelCadastroAluguel;
     private PainelAluguel painelAluguel;
 
-
+    /**
+     *Método para criar a janela e atualizar dados nela;
+     * @param pai - recebe o JFrame pai;
+     * @param controller - recebe o controller da UI;
+     */
     public JanelaCrudAluguel(JFrame pai, AluguelControllerUI controller) {
         this.controller = controller;
         this.controller.setJanela(this);
@@ -31,7 +36,9 @@ public class JanelaCrudAluguel extends JFrame {
         this.setVisible(true);
     }
 
-
+    /**
+     * Método para iniciar os componentes da janela;
+     */
     private void iniciaComponentes() {
         painelPrincipal = new JPanel(new CardLayout());
         painelAluguel = new PainelAluguel(controller);
@@ -41,7 +48,10 @@ public class JanelaCrudAluguel extends JFrame {
         this.add(painelPrincipal);
     }
 
-
+    /**
+     * Método para mostrar o painel;
+     * @param painel - recebe a variável painel do tipo string;
+     */
     public void mostrarPainel(String painel) {
         CardLayout card = (CardLayout) (painelPrincipal.getLayout());
         card.show(painelPrincipal, painel);

@@ -11,7 +11,7 @@ import javax.swing.table.AbstractTableModel;
 import model.Livro;
 
 /**
- *
+ *Classe responsável pela definição de tamanho de colunas/linhas do frame;
  * @author Tainara Specht
  * @author Diego Peixoto
  */
@@ -20,14 +20,20 @@ public class AluguelTableModel extends AbstractTableModel{
     private String header[];
     private List<Livro> livros;
 
-
+    /**
+     * Método responsável por definir os nomes dos headers;
+     */
     public AluguelTableModel()
     {
         this.header = new String[]{"ISBN","Título","Editora","Autor(es)","Ano de Publicação","Disponibilidade"};
         this.livros = new ArrayList<Livro>();
     }
 
-
+    /**
+     * Método responsável por acessar as informações de header e lista de livros;
+     * @param header - recebe uma variável do tipo string com os headers;
+     * @param livros - recebe uma lista de livros;
+     */
     public AluguelTableModel(String[] header, List<Livro> livros)
     {
         this.header = header;

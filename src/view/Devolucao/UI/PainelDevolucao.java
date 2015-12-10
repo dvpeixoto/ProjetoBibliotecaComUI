@@ -16,7 +16,7 @@ import javax.swing.JTable;
 import model.Livro;
 
 /**
- *
+ *Classe responsável por realizar as ações dos botões na janela;
  * @author Diego Peixoto
  * @author Tainara Specht
  */
@@ -27,7 +27,10 @@ public class PainelDevolucao extends javax.swing.JPanel {
     private LivroControllerUI controllerLivro;
     private DevolucaoControllerUI controller;
 
-
+    /**
+     * Método responsável por acessar as informações da controller;
+     * @param controller - recebe o objeto controller da UI;
+     */
     public PainelDevolucao(DevolucaoControllerUI controller) {
         this.controller = controller;
         initComponents();

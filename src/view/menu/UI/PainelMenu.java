@@ -15,8 +15,7 @@ import view.Devolucao.UI.JanelaCrudDevolucao;
 import view.Livro.UI.JanelaCrudLivro;
 import view.Relatorio.UI.PainelRelatorio;
 /**
- *
- *
+ *Classe responsável por realizar as ações dos botões na janela;
  * @author Tainara Specht
  * @author Diego Peixoto
  */

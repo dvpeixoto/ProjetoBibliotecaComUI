@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
- *
+ *Classe responsável por iniciar o frame com o CRUD da Devolução;
  * @author Diego Peixoto
  * @author Tainara Specht
  */
@@ -20,6 +20,11 @@ public class JanelaCrudDevolucao extends JFrame {
     private PainelCadastroDevolucao painelCadastroDevolucao;
     private PainelDevolucao painelDevolucao;
 
+    /**
+     *Método para criar a janela e atualizar dados nela;
+     * @param pai - recebe o JFrame pai;
+     * @param controller - recebe o controller da UI;
+     */
     public JanelaCrudDevolucao(JFrame pai, DevolucaoControllerUI controller) {
         this.controller = controller;
         this.controller.setJanela(this);
@@ -31,6 +36,9 @@ public class JanelaCrudDevolucao extends JFrame {
         this.setVisible(true);
     }
 
+    /**
+     * Método para iniciar os componentes da janela;
+     */
     private void iniciaComponentes() {
         painelPrincipal = new JPanel(new CardLayout());
         painelDevolucao = new PainelDevolucao(controller);
@@ -39,7 +47,10 @@ public class JanelaCrudDevolucao extends JFrame {
         painelPrincipal.add(painelCadastroDevolucao, PAINELFORM);
         this.add(painelPrincipal);
     }
-
+    /**
+     * Método para mostrar o painel;
+     * @param painel - recebe a variável painel do tipo string;
+     */
     public void mostrarPainel(String painel) {
         CardLayout card = (CardLayout) (painelPrincipal.getLayout());
         card.show(painelPrincipal, painel);

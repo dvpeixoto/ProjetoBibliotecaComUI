@@ -11,13 +11,17 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 /**
- *
+ *Classe responsável por realizar as ações dos botões na janela;
  * @author Tainara Specht
  * @author Diego Peixoto
  */
 public class PainelCliente extends javax.swing.JPanel {
     private ClienteControllerUI controller;
 
+    /**
+     * Método responsável por acessar as informações da controller;
+     * @param controller - recebe o objeto controller da UI;
+     */
     public PainelCliente(ClienteControllerUI controller) {
         this.controller = controller;
         initComponents();

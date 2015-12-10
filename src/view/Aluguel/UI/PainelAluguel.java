@@ -15,7 +15,7 @@ import javax.swing.JTable;
 import model.Livro;
 
 /**
- *
+ *Classe responsável por realizar as ações dos botões na janela;
  * @author Tainara Specht
  * @author Diego Peixoto
  */
@@ -25,7 +25,10 @@ public class PainelAluguel extends javax.swing.JPanel {
     private AluguelControllerUI controller;
     private LivroControllerUI controllerLivro;
 
-
+    /**
+     * Método responsável por acessar as informações da controller;
+     * @param controller - recebe o objeto controller da UI;
+     */
     public PainelAluguel(AluguelControllerUI controller) {
         initComponents();
         this.controller = controller;
@@ -128,6 +131,7 @@ public class PainelAluguel extends javax.swing.JPanel {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
+
 
     private void botaoVisualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoVisualizarActionPerformed
         controller.visualizarLivro();

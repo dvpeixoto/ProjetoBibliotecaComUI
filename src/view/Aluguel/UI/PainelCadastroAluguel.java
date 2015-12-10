@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
- *
+ *Classe responsável pela interface do cadastro de um Aluguel e de um Aluguel;
  * @author Tainara Specht
  * @author Diego Peixoto
  */
@@ -230,6 +230,14 @@ try{
         return labelPainelFormulario;
     }
 
+    /**
+     * Método para carregar os dados dos livros;
+     * @param isbn - recebe o isbn de um livro;
+     * @param titulo - recebe o título de um livro;
+     * @param editora - recebe a editora de um livro;
+     * @param autor - recebe o(s) autor(es) de um livro;
+     * @param anoPublicacao - recebe o ano de publicação de um livro;
+     */
     public void carregaDados(String isbn, String titulo, String editora, String autor, String anoPublicacao) {
         this.textISBN.setText(isbn);
         this.textTitulo.setText(titulo);

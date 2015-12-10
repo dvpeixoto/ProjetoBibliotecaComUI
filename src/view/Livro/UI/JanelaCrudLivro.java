@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
- *
+ *Classe responsável por iniciar o frame com o CRUD do Livro;
  * @author Diego Peixoto
  * @author Tainara Specht
  */
@@ -20,6 +20,11 @@ public class JanelaCrudLivro extends JFrame {
     private PainelCadastroLivro painelCadastroLivro;
     private PainelLivro painelLivro;
 
+    /**
+     *Método para criar a janela e atualizar dados nela;
+     * @param pai - recebe o JFrame pai;
+     * @param controller - recebe o controller da UI;
+     */
     public JanelaCrudLivro(JFrame pai, LivroControllerUI controller) {
         this.controller = controller;
         this.controller.setJanela(this);
@@ -30,7 +35,9 @@ public class JanelaCrudLivro extends JFrame {
         this.setLocationRelativeTo(pai);
         this.setVisible(true);
     }
-
+    /**
+     * Método para iniciar os componentes da janela;
+     */
     private void iniciaComponentes() {
         painelPrincipal = new JPanel(new CardLayout());
         painelLivro = new PainelLivro(controller);
@@ -39,7 +46,10 @@ public class JanelaCrudLivro extends JFrame {
         painelPrincipal.add(painelCadastroLivro, PAINELFORM);
         this.add(painelPrincipal);
     }
-
+    /**
+     * Método para mostrar o painel;
+     * @param painel - recebe a variável painel do tipo string;
+     */
     public void mostrarPainel(String painel) {
         CardLayout card = (CardLayout) (painelPrincipal.getLayout());
         card.show(painelPrincipal, painel);

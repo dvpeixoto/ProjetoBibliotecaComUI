@@ -9,7 +9,7 @@ import java.awt.CardLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 /**
- *
+ *Classe responsável por iniciar o frame dos relatórios;
  * @author Diego Peixoto
  * @author Tainara Specht
  */
@@ -18,9 +18,12 @@ public class JanelaRelatorio extends JFrame {
     
     public final static String PAINELFORM = "Formulario";
     public final static String PAINELTABELA = "Tabela";
-    private JPanel painelPrincipal;  
+    private JPanel painelPrincipal;
 
-
+    /**
+     *Método para criar a janela e atualizar dados nela;
+     * @param pai - recebe o JFrame pai;
+     */
     public JanelaRelatorio(JFrame pai) {
         iniciaComponentes();
         this.setTitle("Relatório");
@@ -29,12 +32,19 @@ public class JanelaRelatorio extends JFrame {
         this.setVisible(true);
     }
 
+    /**
+     * Método para iniciar os componentes da janela;
+     */
     private void iniciaComponentes() {
         painelPrincipal = new JPanel(new CardLayout()); 
         painelPrincipal.add(this, PAINELTABELA); 
         this.add(painelPrincipal);
     }
 
+    /**
+     * Método para mostrar o painel;
+     * @param painel - recebe a variável painel do tipo string;
+     */
     public void mostrarPainel(String painel) {
         CardLayout card = (CardLayout) (painelPrincipal.getLayout());
         card.show(painelPrincipal, painel);

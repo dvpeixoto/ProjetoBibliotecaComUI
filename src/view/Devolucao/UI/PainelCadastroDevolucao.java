@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
- *
+ *Classe responsável pela interface do cadastro de uma Devolução e de uma Devolução;
  * @author Diego Peixoto
  * @author Tainara Specht
  */
@@ -261,6 +261,14 @@ public class PainelCadastroDevolucao extends javax.swing.JPanel {
         return labelPainelFormulario;
     }
 
+    /**
+     * Método que carrega os dados de uma Devolução;
+     * @param isbn - recebe o isbn de um livro;
+     * @param titulo - recebe o título de um livro;
+     * @param editora - recebe a editora de um livro;
+     * @param autor - recebe o(s) autor(es) de um livro;
+     * @param anoPublicacao - recebe o ano de publicação de um livro;
+     */
     public void carregaDados(String isbn, String titulo, String editora, String autor, String anoPublicacao) {
         this.textISBN.setText(isbn);
         this.textTitulo.setText(titulo);

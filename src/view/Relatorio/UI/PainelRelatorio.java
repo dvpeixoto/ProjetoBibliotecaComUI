@@ -13,7 +13,7 @@ import view.Cliente.UI.ClienteTableModel;
 import view.Livro.UI.LivroTableModel;
 
 /**
- *
+ *Classe responsável por realizar as ações dos botões na janela;
  * @author Diego Peixoto
  * @author Tainara Specht
  */

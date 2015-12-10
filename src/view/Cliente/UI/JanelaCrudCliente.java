@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
- *
+ *Classe responsável por iniciar o frame com o CRUD do Cliente;
  * @author Tainara Specht
  * @author Diego Peixoto
  */
@@ -20,6 +20,11 @@ public class JanelaCrudCliente extends JFrame {
     private PainelCadastroCliente painelCadastroCliente;
     private PainelCliente painelCliente;
 
+    /**
+     *Método para criar a janela e atualizar dados nela;
+     * @param pai - recebe o JFrame pai;
+     * @param controller - recebe o controller da UI;
+     */
     public JanelaCrudCliente(JFrame pai, ClienteControllerUI controller) {
         this.controller = controller;
         this.controller.setJanela(this);
@@ -30,7 +35,9 @@ public class JanelaCrudCliente extends JFrame {
         this.setLocationRelativeTo(pai);
         this.setVisible(true);
     }
-
+    /**
+     * Método para iniciar os componentes da janela;
+     */
     private void iniciaComponentes() {
         painelPrincipal = new JPanel(new CardLayout());
         painelCliente = new PainelCliente(controller);
@@ -39,7 +46,10 @@ public class JanelaCrudCliente extends JFrame {
         painelPrincipal.add(painelCadastroCliente, PAINELFORM);
         this.add(painelPrincipal);
     }
-
+    /**
+     * Método para mostrar o painel;
+     * @param painel - recebe a variável painel do tipo string;
+     */
     public void mostrarPainel(String painel) {
         CardLayout card = (CardLayout) (painelPrincipal.getLayout());
         card.show(painelPrincipal, painel);

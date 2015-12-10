@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
- *
+ *Classe responsável pela interface do cadastro de um Cliente e de um Cliente;
  * @author Tainara Specht
  * @author Diego Peixoto
  */
@@ -186,18 +186,31 @@ public class PainelCadastroCliente extends javax.swing.JPanel {
         return textTelefone;
     }
 
+    /**
+     * Método responsável por zerar os campos de RG, nome e telefone no cadastro de um cliente;
+     */
     public void zerarCampos() {
         this.textRg.setText("");
         this.textNome.setText("");
         this.textTelefone.setText("");
     }
 
+    /**
+     * Método responsável por carregar os dados de um cliente;
+     * @param rg - recebe o RG de um cliente;
+     * @param nome - recebe o nome de um cliente;
+     * @param telefone - recebe o telefone de um cliente;
+     */
     public void carregaDados(String rg, String nome, String telefone) {
         this.textRg.setText(rg);
         this.textNome.setText(nome);
         this.textTelefone.setText(telefone);
     }
 
+    /**
+     * Método para permitir a edição de um formulário na janela;
+     * @param valor - recebe 'true' ou 'false';
+     */
     public void habilitaEdicaoFormCliente(boolean valor) {
         this.textRg.setEditable(valor);
         this.textNome.setEditable(valor);

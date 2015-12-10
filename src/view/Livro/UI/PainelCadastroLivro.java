@@ -12,7 +12,7 @@ import javax.swing.JTextField;
 import util.PrintUtil;
 
 /**
- *
+ *Classe responsável pela interface do cadastro de um Livro e de um Livro;
  * @author Diego Peixoto
  * @author Tainara Specht
  */
@@ -200,6 +200,9 @@ public class PainelCadastroLivro extends javax.swing.JPanel {
         return labelPainelFormulario;
     }
 
+    /**
+     * Método responsável por zerar os campos de RG, nome e telefone no cadastro de um livro;
+     */
     public void zerarCampos() {
         this.textISBN.setText("");
         this.textTitulo.setText("");
@@ -208,6 +211,14 @@ public class PainelCadastroLivro extends javax.swing.JPanel {
         this.textAnoPublicacao.setText("");
     }
 
+    /**
+     * Método que carrega os dados de um Livro;
+     * @param isbn - recebe o isbn de um livro;
+     * @param titulo - recebe o título de um livro;
+     * @param editora - recebe a editora de um livro;
+     * @param autor - recebe o(s) autor(es) de um livro;
+     * @param anoPublicacao - recebe o ano de publicação de um livro;
+     */
     public void carregaDados(String isbn, String titulo, String editora, String autor, String anoPublicacao) {
         this.textISBN.setText(isbn);
         this.textTitulo.setText(titulo);
@@ -216,6 +227,10 @@ public class PainelCadastroLivro extends javax.swing.JPanel {
         this.textAnoPublicacao.setText(anoPublicacao);
     }
 
+    /**
+     * Método para permitir a edição de um formulário na janela;
+     * @param valor - recebe 'true' ou 'false';
+     */
     public void habilitaEdicaoFormLivro(boolean valor) {
         this.textISBN.setEditable(valor);
         this.textTitulo.setEditable(valor);
