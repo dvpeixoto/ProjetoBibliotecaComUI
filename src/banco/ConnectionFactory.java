@@ -17,7 +17,7 @@ public class ConnectionFactory {
     private final static String BD = "ProjetoBibliotecaBD";
     private final static String URL = "jdbc:postgresql://" + HOST + ":" + PORT + "/" + BD;
     private final static String USUARIO = "postgres";
-    private final static String SENHA = "344613damon@13";
+    private final static String SENHA = "senac2015";
 /**
  * Método para realizar conexão com o banco de dados;
  * @return retorna conexão estabelecida;

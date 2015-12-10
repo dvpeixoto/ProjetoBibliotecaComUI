@@ -48,7 +48,7 @@ public class PainelRelatorio extends javax.swing.JFrame {
         botaoRemover1 = new javax.swing.JButton();
         botaoRemover2 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         botaoInserir.setText("Clientes que mais alugaram");
         botaoInserir.addActionListener(new java.awt.event.ActionListener() {
